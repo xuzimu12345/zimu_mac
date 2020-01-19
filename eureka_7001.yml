@@ -4,7 +4,7 @@ spring:
   application:
     name: eureka_7001
   profiles:
-   active: dev
+    active: dev
 
 server:
   port: 7001
