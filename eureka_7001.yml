@@ -1,0 +1,17 @@
+
+---
+spring:
+  application:
+    name:eureka_7001
+  profiles:dev
+
+server:
+  port: 7001
+eureka:
+  instance:
+    hostname: zimu.mac7001.com    #eureka的主机地址
+  client:
+    register-with-eureka: false #是否向注册中心注册自己
+    fetch-registry: false #false 表示自己端就是注册中心,我的职责就是维护服务实例,并不需要检索服务
+    service-url:
+      defaultZone: http://zimu.mac7002.com:7002/eureka/,http://zimu.mac7003.com:7003/eureka/ #提供服务的地址
