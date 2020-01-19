@@ -1,0 +1,22 @@
+
+server:
+  port: 3344
+spring:
+  profiles:
+    active: dev
+##开启springboot的debug模式:可以在控制台打印自动配置报告
+#debug: true
+
+---
+spring:
+  profiles: dev
+  application:
+    name: zimu_mac_config_dev
+    
+---
+spring:
+  profiles: test
+  application:
+    name: zimu_mac_config_test
+
+
