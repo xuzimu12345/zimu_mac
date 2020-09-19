@@ -1,6 +1,6 @@
 
 server:
-  port: 3344
+  port: 3355
 spring:
   profiles:
     active: dev
